@@ -10,6 +10,7 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+
 app.all('*', function(req, res) {
     res.render('index', {msg: 'Welcome to the Practical Node.js!'})
 });
